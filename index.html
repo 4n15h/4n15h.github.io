@@ -4,254 +4,433 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anish Ganga</title>
-    <!-- Import Montserrat font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Use the latest Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    </style>
-</head>
-<body class="bg-black">
-    <div class="container mx-auto max-w-3xl px-4 py-8">
-        <!-- Header with Headshot -->
-        <header class="mb-12 flex flex-col md:flex-row items-center justify-center gap-8">
-            <div class="w-32 h-32 rounded-lg overflow-hidden bg-black flex-shrink-0">
-                <img src="54264841542_c29eaa15fe_o copy.jpg" alt="Anish Ganga" class="w-full h-full object-cover object-center" style="max-width: 128px; max-height: 128px;">
-            </div>
-            <div class="text-center md:text-left">
-                <h1 class="text-3xl font-bold text-white mb-2">Anish Ganga</h1>
-                <p class="text-lg text-gray-300">Undergraduate Student at UC Berkeley</p>
-                <div class="mt-4 space-x-4 text-sm">
-                    <a href="https://www.linkedin.com/in/anish-ganga-8a2ba2222" class="text-blue-400 hover:text-blue-300" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                </div>
-                <p class="mt-4 text-gray-300 leading-relaxed">
-                    Hi! I'm Anish and I am a junior at UC Berkeley. I am passionate about the intersection of technology and society, 
-                    particularly through social systems.
-                </p>
-            </div>
-        </header>
 
-        <!-- Table of Contents -->
-        <nav class="mb-12 p-4 bg-black rounded-lg shadow-lg border border-gray-800">
-            <h2 class="text-xl font-semibold text-white mb-4 text-center">Navigation</h2>
-            <div class="flex flex-wrap justify-center gap-3 text-sm">
-                <a href="#industry" class="text-blue-400 hover:text-blue-300">Industry</a>
-                <span class="text-gray-600">|</span>
-                <a href="#fellowships" class="text-blue-400 hover:text-blue-300">Fellowships</a>
-                <span class="text-gray-600">|</span>
-                <a href="#research" class="text-blue-400 hover:text-blue-300">Research</a>
-                <span class="text-gray-600">|</span>
-                <a href="#extracurriculars" class="text-blue-400 hover:text-blue-300">Extracurriculars</a>
-                <span class="text-gray-600">|</span>
-                <a href="#education" class="text-blue-400 hover:text-blue-300">Education</a>
-                <span class="text-gray-600">|</span>
-                <a href="#coursework" class="text-blue-400 hover:text-blue-300">Coursework</a>
-                <span class="text-gray-600">|</span>
-                <a href="#publications" class="text-blue-400 hover:text-blue-300">Publications</a>
-                <span class="text-gray-600">|</span>
-            </div>
-        </nav>
-
-        <!-- Industry Experience -->
-        <section id="industry" class="mb-24">
-            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Industry</h2>
-            <div class="space-y-6">
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">JusticeText</h3>
-                    <p class="text-gray-300 text-sm">Product Research Intern</p>
-                    <p class="text-gray-300 text-sm italic">June 2025 - August 2025</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">Sound.fan</h3>
-                    <p class="text-gray-300 text-sm">Team Manager</p>
-                    <p class="text-gray-300 text-sm italic">April 2024 - August 2024</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Fellowship Work -->
-        <section id="fellowships" class="mb-24">
-            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Fellowships</h2>
-            <div class="space-y-6">
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">True Ventures</h3>
-                    <p class="text-gray-300 text-sm">Fellow</p>
-                    <p class="text-gray-300 text-sm italic">June 2025 - August 2025</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">Youth for Privacy</h3>
-                    <p class="text-gray-300 text-sm">Fellow</p>
-                    <p class="text-gray-300 text-sm italic">August 2024 - December 2024</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">Roosevelt Network</h3>
-                    <p class="text-gray-300 text-sm">Forge Fellow</p>
-                    <p class="text-gray-300 text-sm italic">June 2024 - November 2024</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Research Experience -->
-        <section id="research" class="mb-24">
-            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Research</h2>
-            <div class="space-y-6">
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">AI Policy and Governance Lab at UC Berkeley Haas School of Business</h3>
-                    <p class="text-gray-300 text-sm">Undergraduate Research Assistant - Professor David Evan Harris</p>
-                    <p class="text-gray-300 text-sm italic">April 2024 - May 2025</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">Public Purpose of Venture Capital at UC Berkeley School of Law</h3>
-                    <p class="text-gray-300 text-sm">Undergraduate Research Assistant - Professor Manisha Padi</p>
-                    <p class="text-gray-300 text-sm italic">February 2025 - May 2025</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">Black Foundations in Education at UC Berkeley School of Education</h3>
-                    <p class="text-gray-300 text-sm">Undergraduate Research Assistant - PhD Candidate Jeremy Martin</p>
-                    <p class="text-gray-300 text-sm italic">February 2024 - May 2024</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Extracurriculars -->
-        <section id="extracurriculars" class="mb-24">
-            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Extracurriculars</h2>
-            <div class="space-y-6">
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">ASUC Student Legal Clinic</h3>
-                    <p class="text-gray-300 text-sm">Co-Director</p>
-                    <p class="text-gray-300 text-sm italic">May 2025 - Present</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-
-                <div class="border-l-4 border-gray-800 pl-4">
-                    <h3 class="text-lg font-medium text-white">UC Berkeley Human Rights Center</h3>
-                    <p class="text-gray-300 text-sm">Student Researcher</p>
-                    <p class="text-gray-300 text-sm italic">September 2025 - Present</p>
-                    <ul class="mt-2 text-gray-300 space-y-1">
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education -->
-        <section id="education" class="mb-24">
-            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Education</h2>
-            <div class="border-l-4 border-gray-800 pl-4">
-                <h3 class="text-lg font-medium text-white">University of California-Berkeley</h3>
-                <p class="text-gray-300">B.A. Data Science | Minor in Public Policy</p>
-                <p class="text-gray-400 text-sm">Expected Graduation: May 2027</p>
-            </div>
-        </section>
-
-        <!-- Coursework -->
-        <section id="coursework" class="mb-24">
-            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Coursework</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                    <h3 class="text-lg font-medium text-white mb-4 ml-4">Technical Courses</h3>
-                    <div class="border-l-4 border-gray-800 pl-4">
-                        <ul class="text-gray-300 space-y-1">
-                            <li> - Probability for Data Science (SP26)</li>
-                            <li> - Numerical Analysis for Data Science and Statistics (SP26)</li>
-                            <li> - Data Engineering (FA25)</li>
-                            <li> - Discrete Mathematics (FA25)</li>
-                            <li> - Data Mining and Analytics (FA25)</li>
-                            <li> - Principles and Techniques of Data Science (SP25)</li>
-                            <li> - Data Structures (SP25)</li>
-                            <li> - Algorithms, Ethics, and Public Policy (FA24)</li>
-                            <li> - Computational Structures in Data Science (FA24)</li>
-                            <li> - Linear Algebra (FA24)</li>
-                            <li> - Foundations of Data Science (SP24)</li>
-                            <li> - Introduction to Probability and Statistics (SP24)</li>
-                            <li> - Multivariable Calculus (FA22)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg font-medium text-white mb-4 ml-4">Other Relevant Courses</h3>
-                    <div class="border-l-4 border-gray-800 pl-4">
-                        <ul class="text-gray-300 space-y-1">
-                            <li> - Progress? An Introduction to Technology and Public Policy (SP26)</li>
-                            <li> - Game Changer? An Introduction to A.I. and Public Policy (SP26)</li>
-                            <li> - The Final Frontier? Space Technology and National Security Policy (FA25)</li>
-                            <li> - Capital and the Question of Technology (SP25)</li>
-                            <li> - Introduction to Public Policy Analysis (SP24)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications & Projects -->
-        <section id="publications" class="mb-24">
-            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Publications & Projects</h2>
-            
-            <!-- Publications Subsection -->
-            <div class="mb-8">
-                <h3 class="text-xl font-semibold text-gray-300 mb-4 ml-4">Publications</h3>
-                <div class="space-y-4">
-                    <div class="border-l-4 border-gray-800 pl-4">
-                        <h4 class="text-lg font-medium text-white">
-                            <a href="https://www.iaras.org/home/caijems/employees-satisfaction-in-different-industries-an-exploratory-review-of-the-literature" class="hover:text-blue-300" target="_blank" rel="noopener noreferrer">Employees Satisfaction in Different Industries: An Exploratory Review of the Literature</a>
-                        </h4>
-                        <p class="text-gray-300 text-sm">Anish Ganga</p>
-                        <p class="text-gray-300 text-sm">International Journal of Economics and Management Systems</p>
-                        <p class="text-gray-300 text-sm italic">July 2022</p>
-                    </div>
-mimira                </div>
-            </div>
-
-            <!-- Projects Subsection -->
-            <div>
-                <h3 class="text-xl font-semibold text-gray-300 mb-4 ml-4">Projects</h3>
-                <div class="space-y-4">
-                    <div class="border-l-4 border-gray-800 pl-4">
-                        <h4 class="text-lg font-medium text-white">
-                            <a href="https://www.apartresearch.com/project/enhancing-human-verification-systems-to-address-ai-agent-circumvention-and-attributability-concerns" class="hover:text-blue-300" target="_blank" rel="noopener noreferrer">Enhancing Human Verification Systems to Address AI Agent Circumvention and Attributability Concerns</a>
-                        </h4>
-                        <p class="text-gray-300 text-sm">Yogev Angelovici, Anish Ganga, Saathvik Kannan, Zihao Zhou</p>
-                        <p class="text-gray-300 text-sm">AI Policy Hackathon at Johns Hopkins University</p>
-                        <p class="text-gray-300 text-sm italic">October 2024</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Add smooth scrolling behavior -->
-    <style>
         html {
             scroll-behavior: smooth;
         }
+
         body {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            background-color: #f5f0e8;
+            color: #3d3229;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 6rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 1.5rem;
+            border: 2px solid #d4c9b8;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            color: #2c241c;
+            margin-bottom: 0.3rem;
+        }
+
+        .subtitle {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #8a7d6b;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            font-size: 1.15rem;
+            color: #5a4e40;
+            max-width: 500px;
+            margin: 0 auto 1.5rem;
+            font-weight: 400;
+        }
+
+        .links a {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #8a7d6b;
+            text-decoration: none;
+            border-bottom: 1px solid #d4c9b8;
+            padding-bottom: 1px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+
+        .links a:hover {
+            color: #3d3229;
+            border-color: #3d3229;
+        }
+
+        /* Divider */
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: #c9bda8;
+            margin: 2.5rem auto;
+        }
+
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #8a7d6b;
+            text-decoration: none;
+            margin: 0 0.8rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #3d3229;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #2c241c;
+            margin-bottom: 1rem;
+            letter-spacing: 0.02em;
+        }
+
+        .entry {
+            margin-bottom: 1.4rem;
+            padding-bottom: 1.4rem;
+            border-bottom: 1px solid #e6ddd0;
+        }
+
+        .entry:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .entry-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #2c241c;
+            margin-bottom: 0.1rem;
+        }
+
+        .entry-title a {
+            color: #2c241c;
+            text-decoration: none;
+            border-bottom: 1px solid #d4c9b8;
+            transition: border-color 0.2s;
+        }
+
+        .entry-title a:hover {
+            border-color: #3d3229;
+        }
+
+        .entry-role {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #6b5f4f;
+        }
+
+        .entry-date {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.72rem;
+            color: #a89a85;
+            letter-spacing: 0.03em;
+        }
+
+        .entry-detail {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.78rem;
+            color: #6b5f4f;
+            line-height: 1.5;
+        }
+
+        /* Coursework grid */
+        .course-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .course-group h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #3d3229;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-list li {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.78rem;
+            color: #6b5f4f;
+            padding: 0.25rem 0;
+            line-height: 1.5;
+        }
+
+        /* Publications */
+        .pub-authors {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.78rem;
+            color: #6b5f4f;
+        }
+
+        .pub-venue {
+            font-family: 'Jost', sans-serif;
+            font-size: 0.78rem;
+            font-style: italic;
+            color: #8a7d6b;
+        }
+
+        .sub-heading {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #3d3229;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 2.5rem 1.25rem 4rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav a {
+                margin: 0.3rem 0.5rem;
+                display: inline-block;
+            }
+
+            .course-columns {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
         }
     </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <img src="54264841542_c29eaa15fe_o copy.jpg" alt="Anish Ganga" class="headshot">
+            <h1>Anish Ganga</h1>
+            <p class="subtitle">UC Berkeley &middot; Data Science &middot; Public Policy</p>
+            <p class="bio">
+                Hi! I'm Anish and I am a junior at UC Berkeley. I am passionate about the intersection of technology and society, particularly through social systems.
+            </p>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/anish-ganga-8a2ba2222" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#research">Research</a>
+            <a href="#industry">Industry</a>
+            <a href="#extracurriculars">Extracurriculars</a>
+            <a href="#fellowships">Fellowships</a>
+            <a href="#education">Education</a>
+            <a href="#coursework">Coursework</a>
+            <a href="#publications">Publications</a>
+        </nav>
+
+        <div class="divider"></div>
+
+        <!-- Research -->
+        <section id="research">
+            <h2>Research</h2>
+            <div class="entry">
+                <div class="entry-title">AI Policy and Governance Lab</div>
+                <div class="entry-role">Undergraduate Research Assistant &middot; Professor David Evan Harris</div>
+                <div class="entry-detail">UC Berkeley Haas School of Business</div>
+                <div class="entry-date">April 2024 &ndash; May 2025</div>
+            </div>
+            <div class="entry">
+                <div class="entry-title">Public Purpose of Venture Capital</div>
+                <div class="entry-role">Undergraduate Research Assistant &middot; Professor Manisha Padi</div>
+                <div class="entry-detail">UC Berkeley School of Law</div>
+                <div class="entry-date">February 2025 &ndash; May 2025</div>
+            </div>
+            <div class="entry">
+                <div class="entry-title">Black Foundations in Education</div>
+                <div class="entry-role">Undergraduate Research Assistant &middot; PhD Candidate Jeremy Martin</div>
+                <div class="entry-detail">UC Berkeley School of Education</div>
+                <div class="entry-date">February 2024 &ndash; May 2024</div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Industry -->
+        <section id="industry">
+            <h2>Industry</h2>
+            <div class="entry">
+                <div class="entry-title">JusticeText</div>
+                <div class="entry-role">Product Research Intern</div>
+                <div class="entry-date">June 2025 &ndash; August 2025</div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Extracurriculars -->
+        <section id="extracurriculars">
+            <h2>Extracurriculars</h2>
+            <div class="entry">
+                <div class="entry-title">ASUC Student Legal Clinic</div>
+                <div class="entry-role">Co-Director</div>
+                <div class="entry-date">May 2025 &ndash; Present</div>
+            </div>
+            <div class="entry">
+                <div class="entry-title">UC Berkeley Human Rights Center</div>
+                <div class="entry-role">Student Researcher</div>
+                <div class="entry-date">September 2025 &ndash; Present</div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Fellowships -->
+        <section id="fellowships">
+            <h2>Fellowships</h2>
+            <div class="entry">
+                <div class="entry-title">True Ventures</div>
+                <div class="entry-role">Fellow</div>
+                <div class="entry-date">June 2025 &ndash; August 2025</div>
+            </div>
+            <div class="entry">
+                <div class="entry-title">Youth for Privacy</div>
+                <div class="entry-role">Fellow</div>
+                <div class="entry-date">August 2024 &ndash; December 2024</div>
+            </div>
+            <div class="entry">
+                <div class="entry-title">Roosevelt Network</div>
+                <div class="entry-role">Forge Fellow</div>
+                <div class="entry-date">June 2024 &ndash; November 2024</div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-title">University of California, Berkeley</div>
+                <div class="entry-role">B.A. Data Science &middot; Minor in Public Policy</div>
+                <div class="entry-date">Expected May 2027</div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Coursework -->
+        <section id="coursework">
+            <h2>Coursework</h2>
+            <div class="course-columns">
+                <div class="course-group">
+                    <h3>Technical</h3>
+                    <ul class="course-list">
+                        <li>Probability for Data Science</li>
+                        <li>Numerical Analysis for Data Science and Statistics</li>
+                        <li>Data Engineering</li>
+                        <li>Discrete Mathematics</li>
+                        <li>Data Mining and Analytics</li>
+                        <li>Principles and Techniques of Data Science</li>
+                        <li>Data Structures</li>
+                        <li>Algorithms, Ethics, and Public Policy</li>
+                        <li>Computational Structures in Data Science</li>
+                        <li>Linear Algebra</li>
+                        <li>Foundations of Data Science</li>
+                        <li>Introduction to Probability and Statistics</li>
+                        <li>Multivariable Calculus</li>
+                    </ul>
+                </div>
+                <div class="course-group">
+                    <h3>Policy &amp; Society</h3>
+                    <ul class="course-list">
+                        <li>Progress? An Introduction to Technology and Public Policy</li>
+                        <li>Game Changer? An Introduction to A.I. and Public Policy</li>
+                        <li>The Final Frontier? Space Technology and National Security Policy</li>
+                        <li>Capital and the Question of Technology</li>
+                        <li>Introduction to Public Policy Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- Publications & Projects -->
+        <section id="publications">
+            <h2>Publications &amp; Projects</h2>
+
+            <h3 class="sub-heading">Publications</h3>
+            <div class="entry">
+                <div class="entry-title">
+                    <a href="https://www.iaras.org/home/caijems/employees-satisfaction-in-different-industries-an-exploratory-review-of-the-literature" target="_blank" rel="noopener noreferrer">Employees Satisfaction in Different Industries: An Exploratory Review of the Literature</a>
+                </div>
+                <div class="pub-authors">Anish Ganga</div>
+                <div class="pub-venue">International Journal of Economics and Management Systems</div>
+                <div class="entry-date">July 2022</div>
+            </div>
+
+            <h3 class="sub-heading">Projects</h3>
+            <div class="entry">
+                <div class="entry-title">
+                    <a href="https://www.apartresearch.com/project/enhancing-human-verification-systems-to-address-ai-agent-circumvention-and-attributability-concerns" target="_blank" rel="noopener noreferrer">Enhancing Human Verification Systems to Address AI Agent Circumvention and Attributability Concerns</a>
+                </div>
+                <div class="pub-authors">Yogev Angelovici, Anish Ganga, Saathvik Kannan, Zihao Zhou</div>
+                <div class="pub-venue">AI Policy Hackathon at Johns Hopkins University</div>
+                <div class="entry-date">October 2024</div>
+            </div>
+        </section>
+
+    </div>
 </body>
 </html>
